@@ -4,7 +4,7 @@ import { TouchableOpacity } from 'react-native'
 import { COLORS, FONTS, SHADOWS, SIZES } from '../constants'
 import { Image } from 'react-native'
 
-export const CircleButton = ({imgUrl, ...props}) => {
+export const CircleButton = ({handlePress, imgUrl, ...props }) => {
   return (
     <TouchableOpacity style={{
         width: 40,
@@ -17,7 +17,9 @@ export const CircleButton = ({imgUrl, ...props}) => {
         ...SHADOWS.light,
         ...props
 
-    }}>
+    }}
+    onPress={handlePress}
+    >
       <Image
       source={imgUrl}
       resizeMode='contain'
