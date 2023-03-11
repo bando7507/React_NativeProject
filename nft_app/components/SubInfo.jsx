@@ -101,10 +101,11 @@ export const EthPrice = ({data}) => {
     return (
     <View style={{
         width: '100%',
-        paddingHorizontal: SIZES.font,
+        paddingHorizontal: SIZES.font * 1.5,
         marginTop: -SIZES.extraLarge,
         flexDirection: 'row',
         justifyContent: 'space-between',
+        alignItems: 'center'
 
     }}>
        <People />
